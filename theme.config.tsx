@@ -33,10 +33,6 @@ const config: DocsThemeConfig = {
       return {
         titleTemplate: "%s - learn.mueezkhan.com",
       };
-    } else {
-      return {
-        title: "learn.mueezkhan.com",
-      };
     }
   },
   head: () => {
@@ -44,6 +40,14 @@ const config: DocsThemeConfig = {
     const { frontMatter } = useConfig();
     return (
       <>
+        {/* Primary */}
+        <meta
+          name="title"
+          content={
+            `${frontMatter.title} - learn.mueezkhan.com` ||
+            "learn.mueezkhan.com"
+          }
+        />
         <meta
           name="description"
           content={
@@ -51,20 +55,18 @@ const config: DocsThemeConfig = {
             "Learning resources compiled by Mueez Khan."
           }
         />
+        {/* Favicon */}
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        {/* Social Media SEO */}
+        <meta property="og:type" content={"website"} />
         <meta
           property="og:url"
           content={`https://learn.mueezkhan.com${asPath}`}
         />
         <meta
-          property="og:title"
-          content={frontMatter.title || "learn.mueezkhan.com"}
-        />
-        <meta
-          property="og:description"
-          content={
-            frontMatter.description ||
-            "Learning resources compiled by Mueez Khan"
-          }
+          property="og:image"
+          content={frontMatter.image || "/og-image.png"}
         />
       </>
     );
