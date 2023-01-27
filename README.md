@@ -6,9 +6,9 @@ Built with [Nextra](https://nextra.site).
 
 ## Contributing
 
-The repository follows [gitmoji](https://gitmoji.dev/).
+The repository follows [gitmoji](https://gitmoji.dev/) commit conventions.
 
-To run the gitmoji-cli for ease of use using npm:
+To run the [gitmoji-cli](https://github.com/carloscuesta/gitmoji-cli#readme) for ease of use using npm:
 
 ### Install gitmoji-cli
 
@@ -22,7 +22,7 @@ npm i -g gitmoji-cli
 gitmoji -c
 ```
 
-For more help [read the `gitmoji-cli` README.md](https://github.com/carloscuesta/gitmoji-cli).
+For more help [read the `gitmoji-cli` README.md](https://github.com/carloscuesta/gitmoji-cli#readme).
 
 ## License
 
