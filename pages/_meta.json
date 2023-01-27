@@ -1,15 +1,26 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
+  "index": {
+    "title": "Home",
+    "type": "page",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "resources": {
+    "title": "Resources",
     "type": "page"
   },
-  "contact": {
-    "title": "Contact ↗",
+  "about": {
+    "title": "About",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "blog": {
+    "title": "Blog ↗",
+    "type": "page",
+    "href": "https://blog.mueezkhan.com",
     "newWindow": true
   }
 }
