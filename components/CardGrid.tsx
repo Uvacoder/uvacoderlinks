@@ -5,7 +5,7 @@ type CardGridProps = {
   resources: any;
 };
 
-function CardGrid({ resources }: CardGridProps) {
+const CardGrid = ({ resources }: CardGridProps) => {
   return (
     <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
       {resources.map((resource: any, index: number) => (
@@ -22,6 +22,6 @@ function CardGrid({ resources }: CardGridProps) {
       ))}
     </div>
   );
-}
+};
 
 export default CardGrid;
