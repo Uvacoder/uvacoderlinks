@@ -17,6 +17,7 @@ function CardGrid({ resources }: CardGridProps) {
           imgAlt={resource.imgAlt}
           key={resource.name}
           priority={index < 2}
+          newTab={resource.newTab}
         />
       ))}
     </div>

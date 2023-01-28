@@ -8,6 +8,7 @@ type CardProps = {
   imgSrc: string;
   imgAlt: string;
   priority?: boolean;
+  newTab?: boolean;
 };
 
 const Card = ({
@@ -17,9 +18,10 @@ const Card = ({
   imgSrc,
   imgAlt,
   priority,
+  newTab = true,
 }: CardProps) => {
   return (
-    <a href={link} target="_blank" rel="noreferrer">
+    <a href={link} target={newTab ? "_blank" : "_self"} rel="noreferrer">
       <div className="flex flex-col bg-white rounded-lg shadow-md transition ease-in-out hover:shadow-2xl dark:bg-zinc-900 mb-4">
         <div className="relative w-full md:w-full h-full md:h-full flex-1 md:p-24 p-12">
           <Image
