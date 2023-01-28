@@ -4,5 +4,8 @@
     "theme": {
       "typesetting": "article"
     }
+  },
+  "stock": {
+    "title": "Stock Media"
   }
 }

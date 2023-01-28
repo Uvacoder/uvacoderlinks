@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nx-text-gray-500 {
+  color: rgba(158, 158, 158, 1) !important;
+}
