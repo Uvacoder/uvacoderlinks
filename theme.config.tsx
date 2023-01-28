@@ -24,7 +24,15 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: "https://github.com/rzmk/learn.mueezkhan.com",
   footer: {
-    text: "Learning resources compiled by Mueez Khan",
+    text: (
+      <span>
+        MIT {new Date().getFullYear()} ©{" "}
+        <a href="https://learn.mueezkhan.com" target="_blank">
+          Mueez Khan
+        </a>
+        .
+      </span>
+    ),
   },
   // SEO setup
   useNextSeoProps() {

@@ -20,8 +20,8 @@ const Card = ({
 }: CardProps) => {
   return (
     <a href={link} target="_blank" rel="noreferrer">
-      <div className="flex bg-white rounded-lg shadow-md dark:bg-zinc-900 mb-4">
-        <div className="relative w-24 md:w-36 h-36 md:h-36 flex-1">
+      <div className="flex flex-col bg-white rounded-lg shadow-md transition ease-in-out hover:shadow-2xl dark:bg-zinc-900 mb-4">
+        <div className="relative w-full md:w-full h-full md:h-full flex-1 md:p-24 p-12">
           <Image
             src={imgSrc}
             alt={imgAlt}
@@ -29,16 +29,14 @@ const Card = ({
             sizes="(max-width: 768px) 25%,
             (max-width: 1200px) 50%,
             75%"
-            className="flex absolute inset-0 object-cover w-full h-full rounded-lg"
+            className="transition ease-in-out duration-200 hover:brightness-105 flex absolute inset-0 object-cover w-full h-full rounded-lg"
             priority={priority}
           />
         </div>
-        <div className="p-6 flex-1">
-          <div className="">
-            <h1 className="flex text-xl font-semibold dark:text-gray-50">
-              {name}
-            </h1>
-          </div>
+        <div className="p-4 flex-1">
+          <h1 className="flex text-xs md:text-lg font-semibold dark:text-gray-50">
+            {name}
+          </h1>
           <p className="flex text-sm text-gray-500 dark:text-gray-300">
             {description}
           </p>
