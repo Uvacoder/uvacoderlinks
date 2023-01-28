@@ -28,6 +28,10 @@ gitmoji -c
 
 For more help [read the `gitmoji-cli` README.md](https://github.com/carloscuesta/gitmoji-cli#readme).
 
+### When merging PRs
+
+When merging a PR, make sure to include gitmoji's convention of using `:twisted_rightwards_arrows:` :twisted_rightwards_arrows: as its intention.
+
 ## License
 
 This project is licensed under the MIT License.
