@@ -1,15 +1,15 @@
 import React from "react";
-import ResourceCard from "./ResourceCard";
+import Card from "./Card";
 
-type ResourceGridProps = {
+type CardGridProps = {
   resources: any;
 };
 
-function ResourceGrid({ resources }: ResourceGridProps) {
+const CardGrid = ({ resources }: CardGridProps) => {
   return (
     <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
       {resources.map((resource: any, index: number) => (
-        <ResourceCard
+        <Card
           name={resource.name}
           description={resource.description}
           link={resource.link}
@@ -17,10 +17,11 @@ function ResourceGrid({ resources }: ResourceGridProps) {
           imgAlt={resource.imgAlt}
           key={resource.name}
           priority={index < 2}
+          newTab={resource.newTab}
         />
       ))}
     </div>
   );
-}
+};
 
-export default ResourceGrid;
+export default CardGrid;

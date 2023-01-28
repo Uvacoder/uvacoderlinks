@@ -7,9 +7,38 @@ import { Callout } from "nextra-theme-docs";
 
 # Welcome!
 
-## What is learn.mueezkhan.com?
+This site is a place where I create and collect learning resources that I, and possibly you, may find useful.
 
-This site is a place where I create and collect learning resources that others may find useful.
+<Callout type="info" emoji="ℹ">
+  Want to stay updated on my projects and network with others? [Join the
+  Discord](https://discord.com/servers/learn-with-mueez-1068446943736516678)!
+</Callout>
+
+Click on a section below to explore more!
+
+<br />
+
+import CardGrid from "../components/CardGrid.tsx";
+
+<CardGrid
+  resources={[
+    {
+      name: "Resources",
+      description: "Access a compilation of resources",
+      link: "/resources/introduction",
+      imgSrc: "/index/resources.jpg",
+      imgAlt: "An image of multiple apps representing resources",
+      newTab: false,
+    },
+    {
+      name: "Blog",
+      description: "Read my technical blog hosted on Hashnode",
+      link: "https://blog.mueezkhan.com",
+      imgSrc: "/index/blog.jpg",
+      imgAlt: "A stock image of a writer's desk",
+    },
+  ]}
+/>
 
 ## Is this site complete?
 
@@ -21,8 +50,3 @@ This site is a **work in progress** as of right now. I plan to work on:
 - An [about page](/about) that goes more into the details of this website and me
 
 Feel free to take a look around and see if you find anything interesting!
-
-<Callout type="info" emoji="ℹ">
-  Want to stay updated on my projects and network with others? [Join the
-  Discord](https://discord.com/servers/learn-with-mueez-1068446943736516678)!
-</Callout>
