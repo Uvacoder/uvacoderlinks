@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-type ResourceCardProps = {
+type CardProps = {
   name: string;
   description: string;
   link: string;
@@ -10,14 +10,14 @@ type ResourceCardProps = {
   priority?: boolean;
 };
 
-const ResourceCard = ({
+const Card = ({
   name,
   description,
   link,
   imgSrc,
   imgAlt,
   priority,
-}: ResourceCardProps) => {
+}: CardProps) => {
   return (
     <a href={link} target="_blank" rel="noreferrer">
       <div className="flex bg-white rounded-lg shadow-md dark:bg-zinc-900 mb-4">
@@ -48,4 +48,4 @@ const ResourceCard = ({
   );
 };
 
-export default ResourceCard;
+export default Card;
