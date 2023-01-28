@@ -1,11 +1,3 @@
 {
-  "introduction": {
-    "title": "Introduction",
-    "theme": {
-      "typesetting": "article"
-    }
-  },
-  "stock": {
-    "title": "📸 Stock Media"
-  }
+  "stock": "📸 Stock Media"
 }

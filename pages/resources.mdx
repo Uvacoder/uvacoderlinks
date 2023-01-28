@@ -4,20 +4,29 @@ description: "Technical and educational resources compiled over time that you ma
 ---
 
 import { Callout } from "nextra-theme-docs";
+import CardGrid from "../components/CardGrid.tsx";
 
 # Resources
 
-This page includes tech resources I've compiled over time that you may find useful.
+Click an image card below to view that section's resources.
 
-<Callout type="info" emoji="ℹ">
-  Use the sidebar menu (or three lines at the top right on mobile) to choose a
-  section.
-</Callout>
+---
 
-Let me know if a link is not working by either:
+<CardGrid
+  resources={[
+    {
+      name: "Stock Media",
+      description: "Free stock photos, videos, and other media",
+      link: "/resources/stock",
+      imgSrc: "/resources/stock/pixabay.jpg",
+      imgAlt: "An image of a duck from Pixabay",
+      newTab: false,
+    },
+  ]}
+/>
+
+Let me know if a resource link is not working by either:
 
 - [Creating an issue on GitHub](https://github.com/rzmk/learn.mueezkhan.com/issues)
 - [Sending a message on Discord](https://discord.com/servers/learn-with-mueez-1068446943736516678)
 - [Creating a pull request to fix or remove the resource](https://github.com/rzmk/learn.mueezkhan.com/pulls)
-
-You may also navigate sections by clicking the arrow navigations below.

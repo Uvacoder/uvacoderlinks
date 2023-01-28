@@ -1,10 +1,7 @@
 {
   "index": {
     "title": "Home",
-    "type": "page",
-    "theme": {
-      "typesetting": "article"
-    }
+    "type": "page"
   },
   "resources": {
     "title": "Resources",
