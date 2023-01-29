@@ -76,6 +76,8 @@ const config: DocsThemeConfig = {
           property="og:image"
           content={frontMatter.image || "/og-image.png"}
         />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="theme-color" content="#11191f"></meta>
       </>
     );
   },
