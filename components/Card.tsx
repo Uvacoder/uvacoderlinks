@@ -40,7 +40,7 @@ const Card = ({
         </div>
         {/* Text */}
         <div className="p-4 flex-1">
-          <h1 className="flex text-lg md:text-lg font-semibold dark:text-gray-50">
+          <h1 className="flex text-lg font-semibold dark:text-gray-50">
             {name}
           </h1>
           <p className="flex text-sm text-gray-500 dark:text-gray-300">
