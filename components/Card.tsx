@@ -9,6 +9,7 @@ type CardProps = {
   imgAlt: string;
   priority?: boolean;
   newTab?: boolean;
+  tags?: string[];
 };
 
 const Card = ({
@@ -19,11 +20,13 @@ const Card = ({
   imgAlt,
   priority,
   newTab = true,
+  tags,
 }: CardProps) => {
   return (
     <a href={link} target={newTab ? "_blank" : "_self"} rel="noreferrer">
       <div className="flex flex-col bg-white rounded-lg shadow-md transition ease-in-out hover:shadow-2xl dark:bg-zinc-900 mb-4">
-        <div className="relative w-full md:w-full h-full md:h-full flex-1 md:p-24 p-12">
+        {/* Image */}
+        <div className="relative w-full md:w-full h-full md:h-full flex-1 p-24">
           <Image
             src={imgSrc}
             alt={imgAlt}
@@ -35,6 +38,7 @@ const Card = ({
             priority={priority}
           />
         </div>
+        {/* Text */}
         <div className="p-4 flex-1">
           <h1 className="flex text-xs md:text-lg font-semibold dark:text-gray-50">
             {name}
@@ -43,6 +47,16 @@ const Card = ({
             {description}
           </p>
         </div>
+        {/* Tags (if given) */}
+        {tags && (
+          <div className="card-tags ml-4 mr-4 mt-0 mb-4 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <span className="bg-zinc-200 dark:bg-zinc-700 rounded-lg px-2 mr-2">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </a>
   );
